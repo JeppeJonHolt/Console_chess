@@ -1,0 +1,13 @@
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\bin\Debug\netcoreapp3.1\Console_chess.exe
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\bin\Debug\netcoreapp3.1\Console_chess.deps.json
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\bin\Debug\netcoreapp3.1\Console_chess.runtimeconfig.json
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\bin\Debug\netcoreapp3.1\Console_chess.runtimeconfig.dev.json
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\bin\Debug\netcoreapp3.1\Console_chess.dll
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\bin\Debug\netcoreapp3.1\Console_chess.pdb
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\obj\Debug\netcoreapp3.1\Console_chess.csproj.AssemblyReference.cache
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\obj\Debug\netcoreapp3.1\Console_chess.AssemblyInfoInputs.cache
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\obj\Debug\netcoreapp3.1\Console_chess.AssemblyInfo.cs
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\obj\Debug\netcoreapp3.1\Console_chess.csproj.CoreCompileInputs.cache
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\obj\Debug\netcoreapp3.1\Console_chess.dll
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\obj\Debug\netcoreapp3.1\Console_chess.pdb
+C:\Users\jeppe\source\repos\Console_chess\Console_chess\obj\Debug\netcoreapp3.1\Console_chess.genruntimeconfig.cache
