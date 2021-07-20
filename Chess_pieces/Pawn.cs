@@ -19,13 +19,13 @@ namespace Console_chess.Chess_pieces
         public override List<(int,int)> moves()
         {
             List<(int, int)> moveList = new List<(int, int)>();
-            int moveDist = 1;
+            int moveDist = isWhite ? -1:1;
             if (!hasMoved)
             {
                 hasMoved = true;
-                moveList.Add((position.Item1 - (moveDist + 1), position.Item2));
+                moveList.Add((position.Item1 + (moveDist + moveDist), position.Item2));
             }
-            moveList.Add((position.Item1 - moveDist, position.Item2));
+            moveList.Add((position.Item1 + moveDist, position.Item2));
             foreach (var move in moveList)
             {
                 Console.WriteLine(move);
