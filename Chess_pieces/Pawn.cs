@@ -6,6 +6,7 @@ namespace Console_chess.Chess_pieces
 {
     class Pawn : piece
     {
+        bool hasMoved = false;
         public Pawn((int,int) cord) 
         {
             name = "PAWN";
@@ -13,6 +14,18 @@ namespace Console_chess.Chess_pieces
             position = cord;
             value = 1;
             isWhite = piececolor(cord);
+        }
+
+        public override List<(int,int)> moves()
+        {
+            List<(int, int)> moveList = new List<(int, int)>();
+            int moveDist = 1;
+            if (!hasMoved)
+            {
+                moveList.Add((position.Item1 - (moveDist + 1), position.Item2));
+            }
+            moveList.Add((position.Item1 - moveDist, position.Item2));
+            return moveList;
         }
     }
 }

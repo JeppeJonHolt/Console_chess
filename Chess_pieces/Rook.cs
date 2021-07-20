@@ -14,5 +14,6 @@ namespace Console_chess.Chess_pieces
             value = 1;
             isWhite = piececolor(cord);
         }
+
     }
 }

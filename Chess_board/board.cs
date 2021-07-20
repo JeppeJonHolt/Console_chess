@@ -15,6 +15,19 @@ namespace Console_chess.Chess_board
             generateBoard();
             Console.WriteLine("Finished generating board");
             printboard();
+            Console.WriteLine("To select piece input first row then colum");
+            string row = Console.ReadLine();
+            string col = Console.ReadLine();
+            selectPiece((Int32.Parse(row), Int32.Parse(col)));
+
+        }
+
+        public void selectPiece((int,int) cord) 
+        {
+            foreach (var move in fields[cord.Item1, cord.Item2]._piece.moves())
+            {
+                Console.WriteLine(move);
+            }
         }
 
         public void generateBoard() 

@@ -11,9 +11,10 @@ namespace Console_chess.Chess_pieces
         public (int, int) position;
         public int value;
         public bool isWhite;
-        public void moves() 
+        public virtual List<(int, int)> moves() 
         {
             Console.WriteLine("Not implmented");
+            return new List<(int, int)>();
         }
         public bool piececolor((int,int) cord) 
         {
