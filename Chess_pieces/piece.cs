@@ -16,6 +16,11 @@ namespace Console_chess.Chess_pieces
             Console.WriteLine("Not implmented");
             return new List<(int, int)>();
         }
+        public virtual bool move((int, int) distination) 
+        {
+            Console.WriteLine("Not implmented");
+            return false;
+        }
         public bool piececolor((int,int) cord) 
         {
             return !(cord.Item1 < 2);

@@ -15,11 +15,35 @@ namespace Console_chess.Chess_board
             generateBoard();
             Console.WriteLine("Finished generating board");
             printboard();
-            Console.WriteLine("To select piece input first row then colum");
-            string row = Console.ReadLine();
-            string col = Console.ReadLine();
-            selectPiece((Int32.Parse(row), Int32.Parse(col)));
+            gameLoop();
 
+        }
+
+        public void gameLoop() 
+        {
+            Console.WriteLine("To select piece input first row then colum");
+            string row1 = Console.ReadLine();
+            string col1 = Console.ReadLine();
+            Console.WriteLine("Now where the piece should move to");
+            string row2 = Console.ReadLine();
+            string col2 = Console.ReadLine();
+            movePiece((Int32.Parse(row1), Int32.Parse(col1)), (Int32.Parse(row2), Int32.Parse(col2)));
+            printboard();
+            gameLoop();
+        }
+
+        public void movePiece((int,int) from, (int,int) to) 
+        {
+            if (fields[from.Item1, from.Item2]._piece.move(to))
+            {
+                fields[to.Item1, to.Item2]._piece = fields[from.Item1, from.Item2]._piece;
+                fields[to.Item1, to.Item2]._piece.position = (to.Item1, to.Item2);
+                fields[from.Item1, from.Item2]._piece = null;
+            }
+            else 
+            {
+                Console.WriteLine("Illigale move");
+            }
         }
 
         public void selectPiece((int,int) cord) 

@@ -22,10 +22,24 @@ namespace Console_chess.Chess_pieces
             int moveDist = 1;
             if (!hasMoved)
             {
+                hasMoved = true;
                 moveList.Add((position.Item1 - (moveDist + 1), position.Item2));
             }
             moveList.Add((position.Item1 - moveDist, position.Item2));
+            foreach (var move in moveList)
+            {
+                Console.WriteLine(move);
+            }
             return moveList;
+        }
+
+        public override bool move((int,int) distination) 
+        {
+            if (moves().Contains(distination))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
